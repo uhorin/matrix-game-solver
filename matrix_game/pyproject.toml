@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "matrix-game"
+version = "0.1.0"
+description = "Matrix game solver"
+requires-python = ">=3.10"
+dependencies = [
+  "numpy",
+  "scipy",
+]
+
+[tool.setuptools.packages.find]
+where = [".."]
+include = ["matrix_game*"]
